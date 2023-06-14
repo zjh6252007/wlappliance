@@ -3,7 +3,7 @@ import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Carousel from './components/Carousel';
 import Navgation from './components/Navgation';
-import Service from './components/Service';
+import Card from './components/card';
 import './App.css'
 function App(){
   return(
@@ -12,7 +12,8 @@ function App(){
       <Header />
       <Navgation />
       <Carousel />
-      <Service />
+      <h2 className="inventory-title">Our Inventory</h2>
+      <Card />
     </div>
     </Router>
   );
