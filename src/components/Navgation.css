@@ -10,6 +10,7 @@
   .navbar li {
     color: black;
     font-size: 40px;
+    font-family: cursive;
   }
   
   .navbar li a {
