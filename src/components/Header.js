@@ -11,7 +11,7 @@ function Header() {
                 <a href="https://www.google.com/maps/search/?api=1&query=3388+W+New+Haven+Ave.+Melbourne+FL.+32904" target="_blank" rel="noopener noreferrer">
                     <p>3388 W New Haven Ave. Melbourne FL. 32904</p>
                 </a>
-                <p>Phone Number:</p>
+                <p>Phone Number: 321-522-7466</p>
             </div>
         </header>
     );

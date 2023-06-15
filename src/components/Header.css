@@ -21,7 +21,6 @@
     align-items: flex-start;
     font-size: 30px;
     font-weight: bold;
-    /* Adjust the margins as needed */
     margin-right: 60px;
     color: #ffffff;
   }
@@ -38,7 +37,7 @@
     color: white;
   }
   .empty-div {
-    /* Adjust the width if needed */
-    width: 500px;  
+    /* Adjust the logo location */
+    width: 600px;  
 }
   

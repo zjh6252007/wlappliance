@@ -1,0 +1,24 @@
+.card{
+    width:450px;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0,0,0,12);
+
+}
+.applianceimage{
+    height:200px;
+    width:500px;
+    align-items: center;
+}
+.applianceimage img{
+    display:block;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: inherit;
+    object-fit: cover;
+}
+.content{
+    padding:2rem 1.8rem;
+}
