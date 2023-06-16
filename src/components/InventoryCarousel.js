@@ -1,21 +1,28 @@
 import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // 
 import InventoryItem from './inventory';
-import './InventoryCarousel.css'; // Import your styles
-import fridge1 from '../assets/inventory/RF28T5001SR.jpg';
-import drywhite from '../assets/inventory/DryerWhite.jpg';
-// Assume you have an array of inventory data
-const inventoryData = [
-    { image: fridge1, description: 'Nominal Depth:36 in Nominal Depth:36 in' },
-    { image: drywhite, description: 'Description 2' },
-    { image: fridge1, description: 'Description 3' },
-    // ...
-];
+import './InventoryCarousel.css'; 
+
+
+const inventoryImage=["RF28T5001SR","DVE45T6000W","GFW850SPNRS","DW80R9950UG","RF27T5501SR","DVE50BG8500V","NE63B8211SS","RS27T5200SR","GUD27ESSMWW"];
+const altinfo=["samsung fridge","samsung dryer","GE washer","samsung dish washer","samsung fridge with smart pad","GE washer and dryer","samsung side by side fridge"]
+const ticks = inventoryImage.map(item=> require("../assets/inventory/"+item+".jpg"))
+const inventoryData =[];
+
+for(let i = 0;i<inventoryImage.length;i++)
+{
+    inventoryData.push({
+        image:ticks[i],
+        description:inventoryImage[i],
+        altinfo:altinfo[i],
+
+    });
+}
 
 // Divide inventory data into groups of 6
 let inventoryGroups = [];
-for (let i = 0; i < inventoryData.length; i += 6) {
-    inventoryGroups.push(inventoryData.slice(i, i + 6));
+for (let i = 0; i < inventoryData.length; i += 4) {
+    inventoryGroups.push(inventoryData.slice(i, i + 4));
 }
 
 const groups = inventoryGroups.map((group, index) => (

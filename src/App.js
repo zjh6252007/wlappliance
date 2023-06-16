@@ -1,16 +1,23 @@
 import React from "react";
 import { BrowserRouter as Router} from 'react-router-dom';
+import { Helmet } from "react-helmet";
 import Header from './components/Header';
 import Carousel from './components/Carousel';
 import Navgation from './components/Navgation';
 import InventoryCarousel from './components/InventoryCarousel';
 import ad1 from './assets/wlappliancesad1.jpg';
-import ad2 from './assets/wlappliancesad2.jpg'
+import ad2 from './assets/wlappliancesad2.jpg';
+import Footer from './components/Footer';
 import './App.css'
 function App(){
   return(
     <Router>
     <div className="App">
+      <Helmet>
+        <title>Wonderful Life Appliances</title>
+        <meta name="description" content="Wl appliances is a appliances retail located in Melbourne FL, we sell new appliances with low price "/>
+        <meta name="keywords" constent="lowprice,Melbourne,new appliances,kitchen set,microwave,washer,dryer" />
+      </Helmet>
       <Header />
       <Navgation />
       <Carousel />
@@ -18,6 +25,7 @@ function App(){
       <img src={ad2} alt="lease to own policy" className="my-image-class2" />
       <h2 className="inventory-title">Our Inventory</h2>
       <InventoryCarousel />
+      <Footer />
     </div>
     </Router>
   );

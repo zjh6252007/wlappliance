@@ -1,5 +1,5 @@
 .card{
-    width:450px;
+    width:700px;
     background-color: #fff;
     border-radius: 6px;
     overflow: hidden;
@@ -7,18 +7,23 @@
 
 }
 .applianceimage{
-    height:200px;
+    height:500px;
     width:500px;
     align-items: center;
 }
 .applianceimage img{
+    min-width:100%;
     display:block;
-    width:100%;
-    margin-left: auto;
+    margin-left: 110px;
     margin-right: auto;
     height: inherit;
-    object-fit: cover;
+    object-fit: contain;
+    margin-top: 50px;
+}
+.applianceimage p{
+    margin-left: 14em;
 }
 .content{
     padding:2rem 1.8rem;
+    font-size: 40px;
 }

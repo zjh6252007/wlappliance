@@ -1,11 +1,11 @@
 import * as React from 'react';
-import appliances from '../assets/appliances1.jpg'
 import './inventory.css'
-export default function InventoryItem({image, msrp, ourPrice, description}) {
+export default function InventoryItem({image,description,altinfo}) {
   return (
     <div className="card">
       <div className="applianceimage">
-        <img src={image} alt=""></img>
+        <img src={image} alt={altinfo}></img>
+        <p>Model:{description}</p>
       </div>
       <div className="content">
         <h4>In Stock</h4>

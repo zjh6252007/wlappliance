@@ -14,16 +14,16 @@ function ImageCarousel() {
         showThumbs={false}
       >
         <div>
-          <img src={applice1}/>
+          <img src={applice1} alt="In store view"/>
         </div>
         <div>
-          <img src={applice2}/>
+          <img src={applice2} alt="facade view of the store"/>
         </div>
         <div>
-          <img src={applice3}/>
+          <img src={applice3} alt="In store inventory stove and fridge"/>
         </div>
         <div>
-            <img src={applice4}/>
+            <img src={applice4} alt="In store inventory washer and dryer"/>
         </div>
       </Carousel>
     );

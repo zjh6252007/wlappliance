@@ -1,0 +1,27 @@
+
+  .footer {
+    background-color: #FFD700; /* Change this to your desired color */
+    height: 500px; /* Change this to your desired height */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 30%; /* Add some horizontal padding */
+}
+
+.contact-us,
+.business-time {
+    color: #000000; /* Change this to your desired color */
+}
+
+.contact-us h1,
+.business-time h1 {
+    font-size: 24px; /* Change this to your desired size */
+}
+
+.store-info {
+    font-size: 18px; /* Change this to your desired size */
+}
