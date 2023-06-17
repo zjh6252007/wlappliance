@@ -1,7 +1,7 @@
 
   .footer {
-    background-color: #FFD700; /* Change this to your desired color */
-    height: 500px; /* Change this to your desired height */
+    background-color: #FFD700; 
+    height: 500px;
 }
 
 .footer-content {
@@ -9,19 +9,34 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    padding: 0 30%; /* Add some horizontal padding */
+    padding: 0 30%; 
+    background: #FFD700;
+}
+.our-service{
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    width: 500px;
+    
 }
 
 .contact-us,
 .business-time {
-    color: #000000; /* Change this to your desired color */
+    color: #000000;
 }
 
 .contact-us h1,
 .business-time h1 {
-    font-size: 24px; /* Change this to your desired size */
+    font-size: 24px; 
 }
 
 .store-info {
-    font-size: 18px; /* Change this to your desired size */
+    font-size: 18px; 
 }
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+    background-color: #FFD700; 
+    border-top: 1px solid rgb(223, 223, 223);
+  }

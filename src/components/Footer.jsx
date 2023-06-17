@@ -1,9 +1,15 @@
 import React from 'react';
 import './Footer.css'
+import Warrenty from '../assets/footer/Warrenty.png'
 
-function Footer() {
+const Footer=() =>{
+    const year = new Date().getFullYear();
+
     return (
         <footer className="footer">
+            <div className="our-service">
+                <img src={Warrenty}></img>
+            </div>
             <div className="footer-content">
                 <div className="contact-us">
                     <h1>Contact Us</h1>
@@ -25,9 +31,10 @@ function Footer() {
                     <p>Sun:	10:00 AM – 6:00 PM</p>
                 </div>
             </div>
-            {/* Any additional HTML or components you want in the footer */}
+            <div className="copyright">
+                &copy;{year}   WL APPLIANCES
+            </div>
         </footer>
     );
 }
-
 export default Footer;
