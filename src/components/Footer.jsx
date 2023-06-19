@@ -47,13 +47,13 @@ const Footer = () => {
                     </Grid>
                     <Grid item xs={12} md={4}>
                         <Typography variant="h5" mb={1}>Business Time</Typography>
-                        <Typography variant="body1">Mon: 10:00 AM – 6:00 PM</Typography>
-                        <Typography variant="body1">Tue: 10:00 AM – 6:00 PM</Typography>
-                        <Typography variant="body1">Wed: 10:00 AM – 6:00 PM</Typography>
-                        <Typography variant="body1">Thu: 10:00 AM – 6:00 PM</Typography>
-                        <Typography variant="body1">Fri: 10:00 AM – 6:00 PM</Typography>
-                        <Typography variant="body1">Sat: 10:00 AM – 6:00 PM</Typography>
-                        <Typography variant="body1">Sun: 10:00 AM – 6:00 PM</Typography>
+                        <Typography variant="body1">Mon: 10:30 AM – 5:30 PM</Typography>
+                        <Typography variant="body1">Tue: 10:30 AM – 5:30 PM</Typography>
+                        <Typography variant="body1">Wed: 10:30 AM – 5:30 PM</Typography>
+                        <Typography variant="body1">Thu: 10:30 AM – 5:30 PM</Typography>
+                        <Typography variant="body1">Fri: 10:30 AM – 5:30 PM</Typography>
+                        <Typography variant="body1">Sat: 10:30 AM – 5:30 PM</Typography>
+                        <Typography variant="body1">Sun: 10:30 AM – 5:30 PM</Typography>
                     </Grid>
                 </Grid>
                 <Box textAlign="center" pt={2} borderTop="1px solid rgb(223, 223, 223)" mt={2}>

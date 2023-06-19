@@ -13,28 +13,24 @@ import Faq from './Pages/Faq';
 import Repair from './Pages/Repair';
 import { Box, Typography } from '@mui/material';
 import { styled } from '@mui/system';
-
+import { Grid } from '@mui/material';
 
 const AppBox = styled(Box)(({ theme }) => ({
   margin: 0,
   padding: 0,
 }));
 
-const Image = styled('img')({
+const Image = styled('img')(({ theme }) => ({
   width: '100%',
-  maxHeight: '800px',
+  height:'100%',
   objectFit: 'cover',
   marginBottom: '-4px',
-});
+}));
 
-const AdContainer = styled(Box)({
-  display: 'flex',
-  justifyContent: 'space-between',
-});
 
 const InventoryTitle = styled(Typography)({
   textAlign: 'center',
-  marginTop: '4px', 
+  marginTop: 0,
   marginBottom: '20px',
   fontSize: '60px',
   background: '#000',
@@ -59,10 +55,18 @@ function App() {
             <>
               <Carousel />
               <Image src={ad1} alt="never used,low price-appliances" />
-              <AdContainer>
-                <Image src={ad2} alt="lease to own policy" />
-                <Image src={snapfinance} alt="snap finance policy" />
-              </AdContainer>
+              <Grid container spacing={0}>
+                <Grid item xs={12} md={6}>
+
+                  <Image src={ad2} alt="lease to own policy" />
+
+                </Grid>
+                <Grid item xs={12} md={6}>
+
+                  <Image src={snapfinance} alt="snap finance policy" />
+
+                </Grid>
+              </Grid>
               <InventoryTitle variant="h2">Our Inventory</InventoryTitle>
               <InventoryCarousel />
             </>
