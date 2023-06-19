@@ -1,0 +1,9 @@
+.faqpage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faqpage h1 {
+    padding-left: 3cm;
+}

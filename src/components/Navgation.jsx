@@ -6,8 +6,8 @@ function Navbar() {
     <nav>
       <ul className='navbar'>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="leasetown">Lease To Own</Link></li>
-        <li><Link to="/about">About Us</Link></li>
+        <li><a href="https://snapfinance.com/" target="_blank" rel="noopener noreferrer">Lease To Own</a></li>
+        <li><Link to="/repair">Reapir Service</Link></li>
         <li><Link to="/faq">FAQ</Link></li>
       </ul>
     </nav>
