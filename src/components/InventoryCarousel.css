@@ -1,11 +1,12 @@
 .carouselItem {
-    display: inline-block;
+  display: inline-block;
 
-    box-sizing: border-box;
-    padding: 15px; /* Optional for spacing between items */
-  }
-  .carouselGroup {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Change this to fit more items in a row */
-    gap: 20px; /* Optional for spacing between items */
-  }
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.carouselGroup {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}

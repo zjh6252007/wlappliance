@@ -1,16 +1,31 @@
 import React from 'react';
 import './Footer.css'
 import Warrenty from '../assets/footer/Warrenty.png'
+import GE from '../assets/General_Electric_logo.svg.png'
+import Samsung from '../assets/Samsung_Logo.svg.png'
+import LG from '../assets/LG_logo.png'
 
-const Footer=() =>{
+
+const Footer = () => {
     const year = new Date().getFullYear();
 
     return (
         <footer className="footer">
             <div className="our-service">
-                <img src={Warrenty}></img>
+                <img src={Warrenty} alt="Warrenty sign"></img>
+            </div>
+            <div className="warrenty">
+                <h2>We offer a free one-year warranty guarantee on all of our products.</h2>
             </div>
             <div className="footer-content">
+                <div className="our-brand">
+                    <h1>Our brand</h1>
+                    <div className='brand-list'>
+                        <img src={GE} alt="General Electric logo" />
+                        <img src={Samsung} alt="Samsung logo" />
+                        <img src={LG} alt="LG logo" />
+                    </div>
+                </div>
                 <div className="contact-us">
                     <h1>Contact Us</h1>
                     <div className="store-info">
