@@ -17,7 +17,7 @@ function Header() {
         <FaFacebook size={80} />
       </IconButton>
 
-      <Container sx={{ width: "30%" }}>
+      <Container sx={{ width: "30%",margin:"auto"}}>
         <img src={logo} alt="Company Logo" style={{ height: 150, width: "100%" }} />
       </Container>
 
