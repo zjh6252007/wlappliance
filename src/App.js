@@ -23,7 +23,7 @@ const AppBox = styled(Box)(({ theme }) => ({
 const Image = styled('img')(({ theme }) => ({
   width: '100%',
   height:'100%',
-  objectFit: 'cover',
+  objectFit: 'fill',
   marginBottom: '-4px',
 }));
 
@@ -57,9 +57,7 @@ function App() {
               <Image src={ad1} alt="never used,low price-appliances" />
               <Grid container spacing={0}>
                 <Grid item xs={12} md={6}>
-
                   <Image src={ad2} alt="lease to own policy" />
-
                 </Grid>
                 <Grid item xs={12} md={6}>
 
