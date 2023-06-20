@@ -9,7 +9,7 @@ const Nav = styled('nav')(({ theme }) => ({
   height:"17vh",
   [theme.breakpoints.up('md')]: {
     textAlign: 'left',
-    height: '7vh'
+    height: '12vh'
   },
 }));
 
