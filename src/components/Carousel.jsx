@@ -6,7 +6,6 @@ import appliances1 from '../assets/appliances1.jpg';
 import appliances2 from '../assets/appliances2.jpg';
 import appliances3 from '../assets/appliances3.jpg';
 import appliances4 from '../assets/appliances4.jpg';
-import background from '../assets/background.jpg';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
@@ -20,7 +19,7 @@ function ImageCarousel() {
       sx={{
         position: 'relative',
         height: { xs: '37.5vh', md: '50vh' },
-        backgroundImage: `url(${background})`,
+        backgroundColor: '#FFD700',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',

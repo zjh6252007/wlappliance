@@ -50,7 +50,8 @@ export default function InventoryItem({ image, description, altinfo }) {
         <ApplianceImageP>Model: {description}</ApplianceImageP>
       </ApplianceImage>
       <Content>
-        <h4>In Stock</h4>
+        <h4>50% OFF</h4>
+        <h6>Call For Best Price</h6>
       </Content>
     </Card>
   );
