@@ -1,32 +1,52 @@
 import React from 'react';
+import { Box } from '@mui/material';
 import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import applice1 from '../assets/appliances1.jpg';
-import applice2 from '../assets/appliances2.jpg';
-import applice3 from '../assets/appliances3.jpg';
-import applice4 from '../assets/appliances4.jpg';
-import './Carousel.css'
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import appliances1 from '../assets/appliances1.jpg';
+import appliances2 from '../assets/appliances2.jpg';
+import appliances3 from '../assets/appliances3.jpg';
+import appliances4 from '../assets/appliances4.jpg';
+import background from '../assets/background.jpg';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
+
 function ImageCarousel() {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up('md'));
+  const carouselHeight = matches ? '50vh' : '37.5vh';
+
   return (
-    <Carousel
-      showStatus={false}
-      infiniteLoop={true}
-      showThumbs={false}
+    <Box
+      sx={{
+        position: 'relative',
+        height: { xs: '37.5vh', md: '50vh' },
+        backgroundImage: `url(${background})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+      }}
     >
-      <div>
-        <img src={applice1} alt="In store view" />
-      </div>
-      <div>
-        <img src={applice2} alt="facade view of the store" />
-      </div>
-      <div>
-        <img src={applice3} alt="In store inventory stove and fridge" />
-      </div>
-      <div>
-        <img src={applice4} alt="In store inventory washer and dryer" />
-      </div>
-    </Carousel>
+      <Carousel
+        autoPlay={true}
+        infiniteLoop={true}
+        showArrows={false}
+        showStatus={false}
+        showThumbs={false}
+      >
+        <div>
+          <img src={appliances1} alt="In store view" style={{ height: carouselHeight, objectFit: 'contain' }} />
+        </div>
+        <div>
+          <img src={appliances2} alt="facade view of the store" style={{ height: carouselHeight, objectFit: 'contain' }} />
+        </div>
+        <div>
+          <img src={appliances3} alt="In store inventory stove and fridge" style={{ height: carouselHeight, objectFit: 'contain' }} />
+        </div>
+        <div>
+          <img src={appliances4} alt="In store inventory washer and dryer" style={{ height: carouselHeight, objectFit: 'contain' }} />
+        </div>
+      </Carousel>
+    </Box>
   );
 }
-
 export default ImageCarousel;

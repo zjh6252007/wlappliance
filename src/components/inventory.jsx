@@ -1,32 +1,40 @@
 import * as React from 'react';
 import { styled } from '@mui/system';
 
-const Card = styled('div')({
-  width: 700,
+const Card = styled('div')(({ theme }) => ({
+  width: '100%', 
+  [theme.breakpoints.up('sm')]: { 
+    width: 700, 
+  },
   backgroundColor: '#fff',
   borderRadius: 6,
   overflow: 'hidden',
   boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.12)',
-});
+}));
 
 const ApplianceImage = styled('div')({
-  height: 500,
-  width: 500,
+  width: '100%', 
+  display: 'flex',
+  flexDirection: 'column',
   alignItems: 'center',
 });
 
-const ApplianceImageImg = styled('img')({
-  minWidth: '100%',
+const ApplianceImageImg = styled('img')(({ theme }) => ({
+  width: '80%', 
+  height: 'auto',
+  maxHeight: 200, // setting a fixed height
+  [theme.breakpoints.up('sm')]: { 
+    maxHeight: 500,  // larger height for larger screens
+  },
   display: 'block',
-  marginLeft: 'auto',
-  marginRight: 'auto',
-  height: 'inherit',
   objectFit: 'contain',
   marginTop: 50,
-});
+}));
 
 const ApplianceImageP = styled('p')({
-  marginLeft: '14em',
+  textAlign: 'center',
+  maxWidth: '80%', 
+  wordWrap: 'break-word', 
 });
 
 const Content = styled('div')({

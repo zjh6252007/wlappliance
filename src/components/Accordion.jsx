@@ -53,10 +53,10 @@ export default function CustomizedAccordions() {
     <div>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>Why can we offer low-priced appliances?</Typography>
+          <Typography sx={{ fontSize: { xs: '0.8em', md: '1.2em' } }}>Why can we offer low-priced appliances?</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography sx={{ fontSize: { xs: '0.8em', md: '1.2em' } }}>
             Despite the presence of minor surface imperfections like dents or scratches,
             our home appliances remain fully functional.
             We recognize this and offer our customers significant discounts on these products.
@@ -65,10 +65,10 @@ export default function CustomizedAccordions() {
       </Accordion>
       <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography>Where do you get your products?</Typography>
+          <Typography sx={{ fontSize: { xs: '0.8em', md: '1.2em' } }}>Where do you get your products?</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography sx={{ fontSize: { xs: '0.8em', md: '1.2em' } }}>
             Our products are sourced directly from reputable sources such as
             Samsung,LG,GE or through 48-hour returns from major stores like Home Depot, Lowe's, or Costco.
           </Typography>
@@ -76,10 +76,10 @@ export default function CustomizedAccordions() {
       </Accordion>
       <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography>Are your products new, used or refurbished?</Typography>
+          <Typography sx={{ fontSize: { xs: '0.8em', md: '1.2em' } }}>Are your products new, used or refurbished?</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography sx={{ fontSize: { xs: '0.8em', md: '1.2em' } }}>
             The majority of our products are brand new, never used, and packed securely.
             However, please note that a small portion of our products sourced from major stores may be slightly used.
           </Typography>
@@ -87,10 +87,10 @@ export default function CustomizedAccordions() {
       </Accordion>
       <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
         <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-          <Typography>What if the product does not work right after the purchase?</Typography>
+          <Typography sx={{ fontSize: { xs: '0.8em', md: '1.2em' } }}>What if the product does not work right after the purchase?</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography sx={{ fontSize: { xs: '0.8em', md: '1.2em' } }}>
             We provide a complimentary one-year warranty on all items, ensuring your peace of mind.
             If any issues arise within the warranty period, our team will visit your location to resolve the problem.
             In the event that we are unable to rectify the issue, we offer the options of product replacement or, in rare cases, a full refund.
