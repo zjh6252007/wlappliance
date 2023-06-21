@@ -4,7 +4,7 @@ import InventoryItem from './inventory';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
-const inventoryImage = ["RF28T5001SR", "DVE45T6000W", "GFW850SPNRS", "DW80R9950UG", "RF27T5501SR", "DVE50BG8500V", "NE63B8211SS", "RS27T5200SR", "GUD27ESSMWW"];
+const inventoryImage = ["WF50BG8300AV","DVE50BG8500V", "DVE45T6000W", "WF45T6000AW","GFW850SPNRS","GFD850SPNRS","GFQ4ESSNWW","GFT14ESSMWW", "RF27T5501SR", "RF28T5001SR", "GTE17GSNRSS","RS27T5200SR","JSS86SPSS","JBS60RKSS","JB735SPSS","NE63B8211SS","DW80R9950UG", "DDT700SSNSS", "GUD27ESSMWW"];
 const altinfo = ["samsung fridge", "samsung dryer", "GE washer", "samsung dish washer", "samsung fridge with smart pad", "GE washer and dryer", "samsung side by side fridge"]
 const ticks = inventoryImage.map(item => require("../assets/inventory/" + item + ".jpg"))
 const inventoryData = [];

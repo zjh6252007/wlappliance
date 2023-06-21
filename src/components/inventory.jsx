@@ -20,11 +20,11 @@ const ApplianceImage = styled('div')({
 });
 
 const ApplianceImageImg = styled('img')(({ theme }) => ({
-  width: '80%', 
+  width: '70%', 
   height: 'auto',
   maxHeight: 200, // setting a fixed height
   [theme.breakpoints.up('sm')]: { 
-    maxHeight: 500,  // larger height for larger screens
+    maxHeight: 400,  // larger height for larger screens
   },
   display: 'block',
   objectFit: 'contain',
